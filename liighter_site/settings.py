@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'gettingstarted.urls'
+ROOT_URLCONF = 'liighter_site.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'gettingstarted.wsgi.application'
+WSGI_APPLICATION = 'liighter_site.wsgi.application'
 
 
 # Database
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'gettingstarted.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd9qa086hg3bu6n',
+        'USER': 'kdmmmejyztpeei',
+        'PASSWORD': 'a2b9576fd34ef3f1de980f7be0e965d7f5ad38baf2de1aac70048bc8f09afa55',
+        'HOST': 'ec2-54-225-182-108.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
