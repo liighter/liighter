@@ -10,7 +10,7 @@ import liighter_app.views
 # url(r'^blog/', include('blog.urls')),
 
 urlpatterns = [
-    url(r'^$', include('polls.urls')),
+    url(r'^$', include('liighter_app.urls')),
     url(r'^db', liighter_app.views.db, name='db'),
     url(r'^admin/', include(admin.site.urls)),
 ]
